@@ -8,10 +8,12 @@ qr = qrcode.QRCode(
     border = 5
 )
 
-data ="https://github.com/P4ablo"
+data =""
+
+# Paste your data here, so you can generate your own QR Code
 
 qr.add_data(data)
 qr.make(fit = True)
 
 img = qr.make_image(fill = "black", back_color = "white")
-# img.save("test.png")
+# img.save("qr.png")
